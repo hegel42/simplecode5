@@ -1,0 +1,26 @@
+{
+    "AppTitle": "SimpleCode App",
+    "counterValue": "Counter value",
+    "auth": "Authorization",
+    "inputLoginAndPassword": "Input login and password",
+    "login": "Login",
+    "password": "Password",
+    "inputErrorCheckLogin": "Check login",
+    "inputErrorLoginIsShort": "Login must contain more than 3 symbols",
+    "inputErrorCheckPassword": "Check password",
+    "inputErrorPasswordIsShort": "Password must contain more than 8 symbols",
+    "wrongPasswordOrLogin": "Wrong password or login",
+    "tryAgain": "Try again",
+    "close": "Close",
+    "signIn": "Sign in",
+    "language": "Language",
+    "english": "English",
+    "russian": "Russian", 
+    "findCharacter": "Find character",
+    "totalCharacters": "Total characters",
+    "dead": "Dead",
+    "alive": "Alive",
+    "noData": "No Data"
+
+
+}
