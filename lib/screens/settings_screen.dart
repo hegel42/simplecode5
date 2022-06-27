@@ -12,20 +12,6 @@ class SettingsScreen extends StatefulWidget {
 }
 
 class _SettingsScreenState extends State<SettingsScreen> {
-  // int _counter = 0;
-
-  // void _incrementCounter() {
-  //   setState(() {
-  //     _counter++;
-  //   });
-  // }
-
-  // void _decreaseCounter() {
-  //   setState(() {
-  //     _counter--;
-  //   });
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
