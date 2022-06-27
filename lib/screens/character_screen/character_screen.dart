@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:simplecode_3/screens/widgets/grid_view.dart';
-import '../constants/app_colors.dart';
-import '../generated/l10n.dart';
+
+import '../../constants/app_colors.dart';
+import '../../generated/l10n.dart';
 import './widgets/search_bar.dart';
-import './widgets/bottom_nav_bar.dart';
-import '../constants/app_fonts.dart';
-import 'models/character.dart';
+import '../bottom_nav_bar.dart';
+import '../../constants/app_fonts.dart';
+import '../models/character.dart';
 import './widgets/list_view.dart';
+import './widgets/grid_view.dart';
 
 class CharacterScreen extends StatefulWidget {
   const CharacterScreen({Key? key}) : super(key: key);
@@ -33,7 +34,7 @@ class _CharacterScreenState extends State<CharacterScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  '${S.of(context).totalCharacters.toUpperCase()} : ${_personList.length}',
+                  '${S.of(context).totalCharacters.toUpperCase()} : ${personList.length}',
                   style: AppTextStyle.s12w500.copyWith(),
                 ),
                 IconButton(
@@ -55,9 +56,9 @@ class _CharacterScreenState extends State<CharacterScreen> {
           Expanded(
             child: isListView
                 ? ListViewCharacter(
-                    personList: _personList,
+                    personList: personList,
                   )
-                : GridViewCharacter(personList: _personList),
+                : GridViewCharacter(personList: personList),
           ),
         ],
       ),
@@ -65,47 +66,3 @@ class _CharacterScreenState extends State<CharacterScreen> {
     );
   }
 }
-
-final _dummyList = [
-  const Person(
-    name: 'Рик Санчез',
-    species: 'Человек',
-    status: 'Alive',
-    gender: 'Мужской',
-  ),
-  const Person(
-    name: 'Дирктор Агенства',
-    species: 'Человек',
-    status: 'Alive',
-    gender: 'Мужской',
-  ),
-  const Person(
-    name: 'Морти Смит',
-    species: 'Человек',
-    status: 'Alive',
-    gender: 'Мужской',
-  ),
-  const Person(
-    name: 'Саммер Смит',
-    species: 'Человек',
-    status: 'Alive',
-    gender: 'Женский',
-  ),
-  const Person(
-    name: 'Альберт Эйнштейн',
-    species: 'Человек',
-    status: 'Dead',
-    gender: 'Мужской',
-  ),
-  const Person(
-    name: 'Алан Райс',
-    species: 'Человек',
-    status: 'Dead',
-    gender: 'Мужской',
-  ),
-];
-
-final _personList = [
-  ..._dummyList,
-  ..._dummyList,
-];

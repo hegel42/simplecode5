@@ -26,13 +26,19 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("SimpleCode Приложение"),
         "alive": MessageLookupByLibrary.simpleMessage("Живой"),
         "auth": MessageLookupByLibrary.simpleMessage("Авторизация"),
+        "characters": MessageLookupByLibrary.simpleMessage("Персонажи"),
         "close": MessageLookupByLibrary.simpleMessage("Закрыть"),
         "counterValue":
             MessageLookupByLibrary.simpleMessage("Значение счетчика"),
+        "createAccount": MessageLookupByLibrary.simpleMessage("Создать"),
         "dead": MessageLookupByLibrary.simpleMessage("Мертвый"),
         "english": MessageLookupByLibrary.simpleMessage("Английский"),
         "findCharacter":
             MessageLookupByLibrary.simpleMessage("Найти персонажа"),
+        "genderFemale": MessageLookupByLibrary.simpleMessage("Женский"),
+        "gendermale": MessageLookupByLibrary.simpleMessage("Мужской"),
+        "haveAccount":
+            MessageLookupByLibrary.simpleMessage("У Вас еще нет аккаунта?"),
         "inputErrorCheckLogin":
             MessageLookupByLibrary.simpleMessage("Проверьте логин"),
         "inputErrorCheckPassword":
@@ -48,7 +54,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "noData": MessageLookupByLibrary.simpleMessage("Нет данных"),
         "password": MessageLookupByLibrary.simpleMessage("Пароль"),
         "russian": MessageLookupByLibrary.simpleMessage("Русский"),
+        "settings": MessageLookupByLibrary.simpleMessage("Настройки"),
         "signIn": MessageLookupByLibrary.simpleMessage("Вход"),
+        "speciesHuman": MessageLookupByLibrary.simpleMessage("Человек"),
         "totalCharacters":
             MessageLookupByLibrary.simpleMessage("Всего персонажей"),
         "tryAgain": MessageLookupByLibrary.simpleMessage("Попробуйте снова"),

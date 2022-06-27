@@ -20,7 +20,14 @@
     "totalCharacters": "Total characters",
     "dead": "Dead",
     "alive": "Alive",
-    "noData": "No Data"
+    "noData": "No Data",
+    "haveAccount": "Don't have an account yet?",
+    "createAccount": "Create", 
+    "characters": "Characters",
+    "settings": "Settings",
+    "gendermale": "Male",
+    "genderFemale": "Female",
+    "speciesHuman": "Human"
 
 
 }

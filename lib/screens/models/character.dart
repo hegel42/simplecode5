@@ -19,3 +19,47 @@ class Person {
     this.status,
   });
 }
+
+final dummyList = [
+  const Person(
+    name: 'Рик Санчез',
+    species: 'Человек',
+    status: 'Alive',
+    gender: 'Мужской',
+  ),
+  const Person(
+    name: 'Дирктор Агенства',
+    species: 'Human',
+    status: 'Alive',
+    gender: 'Мужской',
+  ),
+  const Person(
+    name: 'Морти Смит',
+    species: 'Человек',
+    status: 'Alive',
+    gender: 'Мужской',
+  ),
+  const Person(
+    name: 'Саммер Смит',
+    species: 'Человек',
+    status: 'Alive',
+    gender: 'Женский',
+  ),
+  const Person(
+    name: 'Альберт Эйнштейн',
+    species: 'Человек',
+    status: 'Dead',
+    gender: 'Женский',
+  ),
+  const Person(
+    name: 'Алан Райс',
+    species: 'Человек',
+    status: 'Dead',
+    gender: 'Мужской',
+  ),
+];
+
+final personList = [
+  ...dummyList,
+  ...dummyList,
+];

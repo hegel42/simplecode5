@@ -25,11 +25,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "AppTitle": MessageLookupByLibrary.simpleMessage("SimpleCode App"),
         "alive": MessageLookupByLibrary.simpleMessage("Alive"),
         "auth": MessageLookupByLibrary.simpleMessage("Authorization"),
+        "characters": MessageLookupByLibrary.simpleMessage("Characters"),
         "close": MessageLookupByLibrary.simpleMessage("Close"),
         "counterValue": MessageLookupByLibrary.simpleMessage("Counter value"),
+        "createAccount": MessageLookupByLibrary.simpleMessage("Create"),
         "dead": MessageLookupByLibrary.simpleMessage("Dead"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
         "findCharacter": MessageLookupByLibrary.simpleMessage("Find character"),
+        "genderFemale": MessageLookupByLibrary.simpleMessage("Female"),
+        "gendermale": MessageLookupByLibrary.simpleMessage("Male"),
+        "haveAccount":
+            MessageLookupByLibrary.simpleMessage("Don\'t have an account yet?"),
         "inputErrorCheckLogin":
             MessageLookupByLibrary.simpleMessage("Check login"),
         "inputErrorCheckPassword":
@@ -45,7 +51,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "noData": MessageLookupByLibrary.simpleMessage("No Data"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "russian": MessageLookupByLibrary.simpleMessage("Russian"),
+        "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
+        "speciesHuman": MessageLookupByLibrary.simpleMessage("Human"),
         "totalCharacters":
             MessageLookupByLibrary.simpleMessage("Total characters"),
         "tryAgain": MessageLookupByLibrary.simpleMessage("Try again"),

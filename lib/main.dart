@@ -1,8 +1,11 @@
+import 'package:simplecode_3/screens/login_screen/login_screen.dart';
+import 'package:simplecode_3/screens/splash_screen.dart';
+
 import 'generated/l10n.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import './screens/character_screen.dart';
+import 'screens/character_screen/character_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +30,7 @@ class MyApp extends StatelessWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       locale: const Locale('ru', 'RU'),
-      home: const CharacterScreen(),
+      home: const SplashScreen(),
     );
   }
 }

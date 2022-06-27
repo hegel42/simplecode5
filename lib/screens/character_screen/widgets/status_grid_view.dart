@@ -3,7 +3,7 @@ import 'package:simplecode_3/constants/app_fonts.dart';
 import 'package:simplecode_3/screens/models/character.dart';
 import 'package:simplecode_3/constants/app_colors.dart';
 import 'package:simplecode_3/generated/l10n.dart';
-import 'package:simplecode_3/screens/widgets/avatar_image.dart';
+import './avatar_image.dart';
 
 class StatusGridView extends StatelessWidget {
   const StatusGridView(
@@ -26,6 +26,18 @@ class StatusGridView extends StatelessWidget {
 
     return S.current.noData;
   }
+
+  // String _gender(String? status) {
+  //   if (status == 'Male') return S.current.gendermale;
+  //   if (status == 'Female') return S.current.gendermale;
+  //   return S.current.noData;
+  // }
+
+  // String _species(String? status) {
+  //   if (status == 'Human') return S.current.speciesHuman;
+
+  //   return S.current.noData;
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +64,7 @@ class StatusGridView extends StatelessWidget {
           style: AppTextStyle.mainTextStyle,
         ),
         Text(
-          '${person.species ?? S.of(context).noData}, ${person.gender ?? S.of(context).noData}',
+          '${(person.species) ?? S.of(context).noData}, ${person.gender ?? S.of(context).noData}',
           style: AppTextStyle.secTextStyle,
         ),
       ],

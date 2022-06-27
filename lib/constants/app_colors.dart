@@ -14,4 +14,6 @@ class AppColors {
 
   static const statusGreen = Color(0xFF27AE60);
   static const statusRed = Color(0xFFEB5757);
+
+  static const loginScreenColor = Color(0xFF0A1B28);
 }

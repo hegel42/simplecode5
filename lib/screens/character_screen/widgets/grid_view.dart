@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:simplecode_3/screens/widgets/status_grid_view.dart';
-import '../models/character.dart';
+import './status_grid_view.dart';
+import '../../models/character.dart';
 
 class GridViewCharacter extends StatelessWidget {
   const GridViewCharacter({

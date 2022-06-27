@@ -269,6 +269,76 @@ class S {
       args: [],
     );
   }
+
+  /// `Don't have an account yet?`
+  String get haveAccount {
+    return Intl.message(
+      'Don\'t have an account yet?',
+      name: 'haveAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create`
+  String get createAccount {
+    return Intl.message(
+      'Create',
+      name: 'createAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Characters`
+  String get characters {
+    return Intl.message(
+      'Characters',
+      name: 'characters',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settings {
+    return Intl.message(
+      'Settings',
+      name: 'settings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Male`
+  String get gendermale {
+    return Intl.message(
+      'Male',
+      name: 'gendermale',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Female`
+  String get genderFemale {
+    return Intl.message(
+      'Female',
+      name: 'genderFemale',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Human`
+  String get speciesHuman {
+    return Intl.message(
+      'Human',
+      name: 'speciesHuman',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

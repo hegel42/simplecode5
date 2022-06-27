@@ -3,7 +3,7 @@ import 'package:simplecode_3/constants/app_fonts.dart';
 import 'package:simplecode_3/screens/models/character.dart';
 import 'package:simplecode_3/constants/app_colors.dart';
 import 'package:simplecode_3/generated/l10n.dart';
-import 'package:simplecode_3/screens/widgets/avatar_image.dart';
+import './avatar_image.dart';
 
 class StatusListView extends StatelessWidget {
   const StatusListView(this.person, {Key? key}) : super(key: key);

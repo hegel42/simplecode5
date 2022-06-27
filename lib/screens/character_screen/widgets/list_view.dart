@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import '../models/character.dart';
+
+import '../../models/character.dart';
+
 import './status_list_view.dart';
 
 class ListViewCharacter extends StatelessWidget {

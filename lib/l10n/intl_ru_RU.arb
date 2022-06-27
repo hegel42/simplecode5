@@ -21,6 +21,13 @@
     "totalCharacters": "Всего персонажей",
     "dead": "Мертвый",
     "alive": "Живой",
-    "noData": "Нет данных"
+    "noData": "Нет данных",
+    "haveAccount": "У Вас еще нет аккаунта?",
+    "createAccount": "Создать",
+    "characters": "Персонажи",
+    "settings": "Настройки",
+    "gendermale": "Мужской",
+    "genderFemale": "Женский",
+    "speciesHuman": "Человек"
 
 }
