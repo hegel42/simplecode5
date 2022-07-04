@@ -5,7 +5,7 @@ import 'package:simplecode_3/constants/app_colors.dart';
 import 'package:simplecode_3/constants/app_fonts.dart';
 
 import '../../generated/l10n.dart';
-import '../character_screen/character_screen.dart';
+import '../character_screen/person_screen.dart';
 import 'widgets/login_field.dart';
 import 'widgets/password_field.dart';
 
@@ -37,6 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
           style: AppTextStyle.s14w400.copyWith(
             color: AppColors.mainText,
           ),
+          textAlign: TextAlign.center,
         ),
         actions: <Widget>[
           ElevatedButton(
@@ -106,7 +107,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const CharacterScreen(),
+                                builder: (context) => const PersonScreen(),
                               ),
                             );
                           } else {

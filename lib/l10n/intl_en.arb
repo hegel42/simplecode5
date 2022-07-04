@@ -10,7 +10,7 @@
     "inputErrorCheckPassword": "Check password",
     "inputErrorPasswordIsShort": "Password must contain more than 8 symbols",
     "wrongPasswordOrLogin": "Wrong password or login",
-    "tryAgain": "Try again",
+    "tryAgain": "Error",
     "close": "Close",
     "signIn": "Sign in",
     "language": "Language",
@@ -18,14 +18,21 @@
     "russian": "Russian", 
     "findCharacter": "Find character",
     "totalCharacters": "Total characters",
+    "characterListIsEmpty": "Character list is empty",
+    "somethingWentWrong": "Something went wrong",
+
+    
     "dead": "Dead",
     "alive": "Alive",
     "noData": "No Data",
     "haveAccount": "Don't have an account yet?",
+
+
+
     "createAccount": "Create", 
     "characters": "Characters",
     "settings": "Settings",
-    "gendermale": "Male",
+    "genderMale": "Male",
     "genderFemale": "Female",
     "speciesHuman": "Human"
 

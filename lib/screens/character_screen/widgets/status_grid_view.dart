@@ -27,18 +27,6 @@ class StatusGridView extends StatelessWidget {
     return S.current.noData;
   }
 
-  // String _gender(String? status) {
-  //   if (status == 'Male') return S.current.gendermale;
-  //   if (status == 'Female') return S.current.gendermale;
-  //   return S.current.noData;
-  // }
-
-  // String _species(String? status) {
-  //   if (status == 'Human') return S.current.speciesHuman;
-
-  //   return S.current.noData;
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Column(

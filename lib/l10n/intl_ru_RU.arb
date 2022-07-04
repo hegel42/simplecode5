@@ -8,10 +8,10 @@
     "password": "Пароль",
     "inputErrorCheckLogin": "Проверьте логин",
     "inputErrorLoginIsShort": "Логин должен содержать не менее 3 символов",
-    "inputErrorCheckPassword": "Проверьте пороль",
+    "inputErrorCheckPassword": "Проверьте пароль",
     "inputErrorPasswordIsShort": "Пароль должен содержать не менее 8 символов",
-    "wrongPasswordOrLogin": "Неверный логин или пароль",
-    "tryAgain": "Попробуйте снова",
+    "wrongPasswordOrLogin": "Введен неверные логин или пароль",
+    "tryAgain": "Ошибка",
     "close": "Закрыть",
     "signIn": "Вход",
     "language": "Язык",
@@ -19,6 +19,9 @@
     "russian": "Русский", 
     "findCharacter": "Найти персонажа",
     "totalCharacters": "Всего персонажей",
+"characterListIsEmpty": "Список персонажей пуст",
+"somethingWentWrong": "Что-то пошло не так",
+
     "dead": "Мертвый",
     "alive": "Живой",
     "noData": "Нет данных",
@@ -26,7 +29,7 @@
     "createAccount": "Создать",
     "characters": "Персонажи",
     "settings": "Настройки",
-    "gendermale": "Мужской",
+    "genderMale": "Мужской",
     "genderFemale": "Женский",
     "speciesHuman": "Человек"
 

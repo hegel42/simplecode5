@@ -160,10 +160,10 @@ class S {
     );
   }
 
-  /// `Try again`
+  /// `Error`
   String get tryAgain {
     return Intl.message(
-      'Try again',
+      'Error',
       name: 'tryAgain',
       desc: '',
       args: [],
@@ -240,6 +240,26 @@ class S {
     );
   }
 
+  /// `Character list is empty`
+  String get characterListIsEmpty {
+    return Intl.message(
+      'Character list is empty',
+      name: 'characterListIsEmpty',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Something went wrong`
+  String get somethingWentWrong {
+    return Intl.message(
+      'Something went wrong',
+      name: 'somethingWentWrong',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Dead`
   String get dead {
     return Intl.message(
@@ -311,10 +331,10 @@ class S {
   }
 
   /// `Male`
-  String get gendermale {
+  String get genderMale {
     return Intl.message(
       'Male',
-      name: 'gendermale',
+      name: 'genderMale',
       desc: '',
       args: [],
     );

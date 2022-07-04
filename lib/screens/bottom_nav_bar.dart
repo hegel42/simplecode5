@@ -5,15 +5,16 @@ import 'package:simplecode_3/constants/app_colors.dart';
 
 import '../constants/app_assets.dart';
 import '../generated/l10n.dart';
-import 'character_screen/character_screen.dart';
+import 'character_screen/person_screen.dart';
 import 'settings_screen.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({
     Key? key,
+    required this.selectedIndex,
   }) : super(key: key);
 
-  final int _selectedIndex = 0;
+  final int selectedIndex;
 
   PageRouteBuilder _pageRouteBuilder(Widget screen) {
     return PageRouteBuilder(
@@ -42,24 +43,27 @@ class BottomNavBar extends StatelessWidget {
     return BottomNavigationBar(
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-          icon: SvgPicture.asset(AppAssets.svg.characterIcon),
+          icon: SvgPicture.asset(
+            AppAssets.svg.characterIcon,
+            color: selectedIndex == 0 ? null : AppColors.menuBarText,
+          ),
           label: S.of(context).characters,
         ),
         BottomNavigationBarItem(
-          icon: const Icon(
+          icon: Icon(
             Icons.settings,
-            color: AppColors.menuBarText,
+            color: selectedIndex == 1 ? AppColors.primary : null,
           ),
           label: S.of(context).settings,
         ),
       ],
       selectedItemColor: AppColors.primary,
       unselectedItemColor: AppColors.menuBarText,
-      currentIndex: _selectedIndex,
+      currentIndex: selectedIndex,
       onTap: (index) {
         if (index == 0) {
           Navigator.of(context).pushAndRemoveUntil(
-            _pageRouteBuilder(const CharacterScreen()),
+            _pageRouteBuilder(const PersonScreen()),
             (route) => false,
           );
         } else if (index == 1) {

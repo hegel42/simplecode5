@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:provider/provider.dart';
 import 'package:simplecode_3/constants/app_fonts.dart';
 import 'package:simplecode_3/screens/bottom_nav_bar.dart';
+import 'package:simplecode_3/screens/models/repo_settings.dart';
 import '../generated/l10n.dart';
 
 class SettingsScreen extends StatefulWidget {
@@ -15,7 +17,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: const BottomNavBar(),
+      bottomNavigationBar: const BottomNavBar(
+        selectedIndex: 1,
+      ),
       appBar: AppBar(
         title: Text(S.of(context).AppTitle),
       ),
@@ -44,6 +48,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                 ],
                 onChanged: (value) async {
+                  if (value == null) return;
                   if (value == 'ru_RU') {
                     await S.load(
                       const Locale('ru', 'RU'),
@@ -55,6 +60,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     );
                     setState(() {});
                   }
+                  if (!mounted) return;
+                  // TODO add !mounted
+                  final repoSettings =
+                      Provider.of<RepoSettings>(context, listen: false);
+                  repoSettings.saveLocale(value);
                 },
               ),
             ],

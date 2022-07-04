@@ -25,6 +25,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "AppTitle": MessageLookupByLibrary.simpleMessage("SimpleCode App"),
         "alive": MessageLookupByLibrary.simpleMessage("Alive"),
         "auth": MessageLookupByLibrary.simpleMessage("Authorization"),
+        "characterListIsEmpty":
+            MessageLookupByLibrary.simpleMessage("Character list is empty"),
         "characters": MessageLookupByLibrary.simpleMessage("Characters"),
         "close": MessageLookupByLibrary.simpleMessage("Close"),
         "counterValue": MessageLookupByLibrary.simpleMessage("Counter value"),
@@ -33,7 +35,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "english": MessageLookupByLibrary.simpleMessage("English"),
         "findCharacter": MessageLookupByLibrary.simpleMessage("Find character"),
         "genderFemale": MessageLookupByLibrary.simpleMessage("Female"),
-        "gendermale": MessageLookupByLibrary.simpleMessage("Male"),
+        "genderMale": MessageLookupByLibrary.simpleMessage("Male"),
         "haveAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account yet?"),
         "inputErrorCheckLogin":
@@ -53,10 +55,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "russian": MessageLookupByLibrary.simpleMessage("Russian"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign in"),
+        "somethingWentWrong":
+            MessageLookupByLibrary.simpleMessage("Something went wrong"),
         "speciesHuman": MessageLookupByLibrary.simpleMessage("Human"),
         "totalCharacters":
             MessageLookupByLibrary.simpleMessage("Total characters"),
-        "tryAgain": MessageLookupByLibrary.simpleMessage("Try again"),
+        "tryAgain": MessageLookupByLibrary.simpleMessage("Error"),
         "wrongPasswordOrLogin":
             MessageLookupByLibrary.simpleMessage("Wrong password or login")
       };

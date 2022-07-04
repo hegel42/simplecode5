@@ -26,6 +26,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("SimpleCode Приложение"),
         "alive": MessageLookupByLibrary.simpleMessage("Живой"),
         "auth": MessageLookupByLibrary.simpleMessage("Авторизация"),
+        "characterListIsEmpty":
+            MessageLookupByLibrary.simpleMessage("Список персонажей пуст"),
         "characters": MessageLookupByLibrary.simpleMessage("Персонажи"),
         "close": MessageLookupByLibrary.simpleMessage("Закрыть"),
         "counterValue":
@@ -36,13 +38,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "findCharacter":
             MessageLookupByLibrary.simpleMessage("Найти персонажа"),
         "genderFemale": MessageLookupByLibrary.simpleMessage("Женский"),
-        "gendermale": MessageLookupByLibrary.simpleMessage("Мужской"),
+        "genderMale": MessageLookupByLibrary.simpleMessage("Мужской"),
         "haveAccount":
             MessageLookupByLibrary.simpleMessage("У Вас еще нет аккаунта?"),
         "inputErrorCheckLogin":
             MessageLookupByLibrary.simpleMessage("Проверьте логин"),
         "inputErrorCheckPassword":
-            MessageLookupByLibrary.simpleMessage("Проверьте пороль"),
+            MessageLookupByLibrary.simpleMessage("Проверьте пароль"),
         "inputErrorLoginIsShort": MessageLookupByLibrary.simpleMessage(
             "Логин должен содержать не менее 3 символов"),
         "inputErrorPasswordIsShort": MessageLookupByLibrary.simpleMessage(
@@ -56,11 +58,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "russian": MessageLookupByLibrary.simpleMessage("Русский"),
         "settings": MessageLookupByLibrary.simpleMessage("Настройки"),
         "signIn": MessageLookupByLibrary.simpleMessage("Вход"),
+        "somethingWentWrong":
+            MessageLookupByLibrary.simpleMessage("Что-то пошло не так"),
         "speciesHuman": MessageLookupByLibrary.simpleMessage("Человек"),
         "totalCharacters":
             MessageLookupByLibrary.simpleMessage("Всего персонажей"),
-        "tryAgain": MessageLookupByLibrary.simpleMessage("Попробуйте снова"),
-        "wrongPasswordOrLogin":
-            MessageLookupByLibrary.simpleMessage("Неверный логин или пароль")
+        "tryAgain": MessageLookupByLibrary.simpleMessage("Ошибка"),
+        "wrongPasswordOrLogin": MessageLookupByLibrary.simpleMessage(
+            "Введен неверные логин или пароль")
       };
 }

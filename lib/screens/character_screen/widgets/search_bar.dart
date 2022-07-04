@@ -3,7 +3,12 @@ import 'package:simplecode_3/generated/l10n.dart';
 import 'package:simplecode_3/constants/app_colors.dart';
 
 class SearchBar extends StatelessWidget {
-  const SearchBar({Key? key}) : super(key: key);
+  const SearchBar({
+    Key? key,
+    this.onChanged,
+  }) : super(key: key);
+
+  final ValueChanged<String>? onChanged;
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +20,7 @@ class SearchBar extends StatelessWidget {
         bottom: 15,
       ),
       child: TextField(
+        onChanged: onChanged,
         cursorColor: AppColors.mainText,
         decoration: InputDecoration(
           hintText: S.of(context).findCharacter,
